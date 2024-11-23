@@ -1,7 +1,10 @@
-// Good Practice: Abstraction
 function calculatePrice<T>(items: T[], getPrice: (item: T) => number): number {
-  // Uses an abstraction to retrieve price details
-  return items.reduce((total, item) => total + getPrice(item), 0);
+  // Use reduce with a regular function to 
+  // sum the prices by applying getPrice to each item
+  return items.reduce(function(total, item) {
+    // Return the updated total after adding the price of the current item
+    return total + getPrice(item);
+  }, 0);
 }
 
 // Example usage
