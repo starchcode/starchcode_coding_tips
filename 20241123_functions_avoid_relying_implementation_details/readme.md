@@ -6,7 +6,6 @@
 
 ## And Here Is An Example That Is Good Because
 1. It's encapsulated and its internal details are not relevant to the consumer.
-2. The user interacts with its public interface: tuple of items and a 
-'getPrice' function:
+2. The user interacts with its public interface: tuple of items and a 'getPrice' function:
 
 ![A good example of encapsulated function](./media/good_example.png)
